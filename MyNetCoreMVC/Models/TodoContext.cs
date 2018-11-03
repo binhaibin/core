@@ -15,5 +15,15 @@ namespace MyNetCoreMVC.Models
         }
 
         public DbSet<Product> TodoItems { get; set; }
+
+        
+    }
+    public class Product
+    {
+        public long Id { get; set; }
+        public string Name { get; set; }
+        public int Price { get; set; }
+
+
     }
 }
