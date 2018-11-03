@@ -155,10 +155,12 @@
         xmlHttpRequest.onreadystatechange = function () {
             if (this.readyState === 4 && this.status === 200) {
                 alert("Delete success");
+                location.reload();
             }
         }
         xmlHttpRequest.open("POST", "/Product/DeleteMany?ids=" + deleteIds, true);
         xmlHttpRequest.send();
+        
     }
 
 </script>
